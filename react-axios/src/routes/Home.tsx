@@ -4,6 +4,12 @@ import blogFetch from "../axios/config"
 
 import "./Home.css"
 
+interface setType {
+    title: string;
+    id: number;
+    body: string;
+}
+
 const Home = () => {
 
     const [posts, setPosts] = useState([])
@@ -29,11 +35,11 @@ const Home = () => {
             <h1>Ultimos posts</h1>
             {posts.length === 0 ?
                 (<p>Carregando..</p>) :
-                (posts.map((post) => (
+                (posts.map((post: setType) => (
                     <div className="post" key={post.id}>
                         <h2>{post.title}</h2>
                         <p>{post.body}</p>
-                        <Link to={`/posts/${post.id}`} className="btn">Ler Mais</Link>
+                        <Link to={`/`} className="btn">Ler Mais</Link>
                     </div>
                 ))
                 )}
