@@ -20,7 +20,7 @@ Aprendendo Router e Axios <br/>
 
 ## 🧭 Tech
 
-This project was developed with the following tech:
+Este projeto utilizei:
 
 ### Front-end
 + `ReactJS + TypeScript`
@@ -35,7 +35,7 @@ This project was developed with the following tech:
 
 ## 💻 Project
 
-Aprendendo a utilizar Rotas com React Router, e consumindo API do site [{JSON}Placeholder]{https://jsonplaceholder.typicode.com/} Usando o Axios para consumir e enviar requição...
+Aprendendo a utilizar Rotas com React Router, e consumindo API do site ```https://jsonplaceholder.typicode.com/``` Usando o Axios para consumir e enviar requição...
 
 
 Made With 🧡 by Maykon!!! <img src="https://github.com/abdoachhoubi/abdoachhoubi/blob/main/gifs/Hi.gif" width="30" alt="gif" />
