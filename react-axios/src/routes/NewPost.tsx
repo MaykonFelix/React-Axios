@@ -3,24 +3,27 @@ import blogFetch from "../axios/config"
 import "./NewPost.css"
 
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
-import useNavigate from "react-router-dom"
 
 
 export const NewPost = () => {
 
-    /*  const navigate = useNavigate(); */
+    const navigate = useNavigate();
 
     const [title, setTitle] = useState()
     const [body, setBody] = useState()
 
     const createPost = async (e) => {
-        e.preventDefaut()
-        const post = { title, body, userId: 1 };
+        e.preventDefault();
 
+        const post = { title, body, userId: 1 };
+        console.log(post)
         await blogFetch.post("/posts", {
             body: post,
         })
+
+        navigate("/")
     }
 
     return (
